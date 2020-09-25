@@ -1,0 +1,24 @@
+.draggable {
+      cursor: move;
+}
+table{    
+    background-color: rgb(24, 26, 27);
+    transition: box-shadow 280ms cubic-bezier(.4,0,.2,1);
+    border-radius: .25rem;
+    background: #ffff;
+    border-collapse: collapse;
+    font-feature-settings: "tnum";
+    font-variant-numeric: tabular-nums;
+    width: 100%;
+    tr{
+      height: 1rem;
+      min-height: 1rem;
+      border: .0625rem solid #dee2e6;
+    }
+    td,th{
+      padding: .5625rem .625rem .625rem;
+      line-height: calc(30 / 16);
+      vertical-align: top;   
+      text-align: center;
+   }
+  }

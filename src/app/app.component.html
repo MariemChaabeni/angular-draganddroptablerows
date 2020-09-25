@@ -1,0 +1,21 @@
+<table class="table">
+  <tr>
+    <th>
+      ID
+    </th> 
+     <th>
+      First Name
+    </th> 
+    <th>
+      Last Name
+    </th> 
+  </tr>
+	<tr *ngFor="let item of list;let i=index"  class="draggable" [myDraggable]="{data: i }" myDropTarget (myDrop)="onDrop($event , i )"
+	>
+		<td> {{item.id}} </td>
+
+		<td> {{item.first_name}} </td> 
+
+		<td> {{item.last_name}} </td>
+	</tr>
+</table>
